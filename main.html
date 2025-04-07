@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #f7941d;
+      color: white;
+      font-size: 14px;
+    }
+    .top-bar .btn {
+      background: #e91e63;
+      border: none;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('hero-bg.jpg') no-repeat center center/cover;
+      color: white;
+      height: 400px;
+      position: relative;
+    }
+    .hero .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin: 10px 0;
+    }
+    .hero h2 {
+      font-size: 20px;
+    }
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: #e91e63;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 30px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      background: linear-gradient(to right, #f7941d, #e91e63);
+      color: white;
+    }
+    .features .feature {
+      text-align: center;
+      max-width: 250px;
+    }
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 30px;
+      background: #f9f9f9;
+    }
+    .about .text {
+      max-width: 60%;
+    }
+    .about .image img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .services {
+      padding: 50px 30px;
+      text-align: center;
+      background: #fff;
+    }
+    .services .service-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .services .service {
+      max-width: 200px;
+    }
+    .services .service img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .services h4 {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="socials">
+      <a href="#">FB</a>
+      <a href="#">TW</a>
+      <a href="#">IN</a>
+    </div>
+    <div class="contact-info">
+      <span>📞 +123-456-7890</span>
+      <span>✉️ contact@digitalagency.com</span>
+      <button class="btn">Request a Consult</button>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="logo">Digital Agency</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Buy Now</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>We Are Creative</h2>
+      <h1>Grow Your Business with Our Digital Marketing Solutions</h1>
+      <p>We help brands connect with their audience through smart, impactful, and innovative strategies. From SEO to social media, we cover it all.</p>
+      <button class="btn">Read More</button>
+      <button class="btn">Request a Consult</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🚀 Launch Campaigns</h3>
+      <p>Customized strategies to launch your brand in the digital space and make a lasting impression.</p>
+    </div>
+    <div class="feature">
+      <h3>💬 24/7 Support</h3>
+      <p>Our team is available round-the-clock to support you with insights and solutions.</p>
+    </div>
+    <div class="feature">
+      <h3>📊 Data-Driven Approach</h3>
+      <p>We analyze and optimize every step using real-time data to improve results.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="text">
+      <h2>About Us</h2>
+      <h3>Over 15 Years of Experience in Digital Marketing</h3>
+      <p>At our digital agency, we are passionate about helping businesses thrive in the digital world. Our team of experts provides tailored strategies that drive engagement, traffic, and conversions. Whether you're a startup or an established brand, we have the tools and expertise to take you to the next level.</p>
+      <button class="btn">Read More</button>
+    </div>
+    <div class="image">
+      <img src="https://www.notiontechnologies.com/blog/wp-content/uploads/2023/07/digital-marketing-advantages-800x800.webp" alt="About Us" />
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <img src="https://images.squarespace-cdn.com/content/v1/524883b7e4b03fcb7c64e24c/1715701202265-YVPLJSENB253405BZKCT/What+is+SEO.jpg?format=1500w" alt="SEO Optimization" />
+        <h4>SEO Optimization</h4>
+      </div>
+      <div class="service">
+        <img src="https://images.yourstory.com/cs/1/175078f09bd211ec9bed114c16bb4a2d/socialmediamarketingstrategy-1650293336008.jpg" alt="Social Media Marketing" />
+        <h4>Social Media Marketing</h4>
+      </div>
+      <div class="service">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFom_B5-K3MiA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1698126499322?e=2147483647&v=beta&t=JkCJXNTluiHkVuOmFoiy-CkTAZLTVgzd487gPVSER6k" alt="Email Campaigns" />
+        <h4>Email Campaigns</h4>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
